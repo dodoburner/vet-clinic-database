@@ -1,7 +1,7 @@
 /* Database schema to keep the structure of entire database. */
 
  CREATE TABLE animals(
-    id INT GENERATED ALWAYS AS IDENTITY, 
+    id INT, 
     name TEXT,
     date_of_birth DATE, 
     escape_attempts INT, 
@@ -9,3 +9,5 @@
     weight_kg DECIMAL,
     PRIMARY KEY(id)
 );
+
+ALTER TABLE animals ADD COLUMN species text;
