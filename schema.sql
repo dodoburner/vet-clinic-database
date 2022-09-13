@@ -10,3 +10,5 @@
     species TEXT,
     PRIMARY KEY(id)
 );
+
+ALTER TABLE animals ADD COLUMN species text;
