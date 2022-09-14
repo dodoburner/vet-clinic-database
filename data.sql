@@ -25,8 +25,12 @@ INSERT INTO owners(full_name, age) VALUES('Jodie Whittaker', 38);
 INSERT INTO species(name) VALUES('Digimon');
 INSERT INTO species(name) VALUES('Pokemon');
 
-UPDATE animals SET species_id = 1 WHERE name LIKE '%mon';
-UPDATE animals SET species_id = 2 WHERE name NOT LIKE '%mon';
+UPDATE animals
+   SET species_id = (SELECT id FROM species WHERE name = 'Digimon')
+   WHERE name LIKE '%mon';
+UPDATE animals
+   SET species_id = (SELECT id FROM species WHERE name = 'Pokemon')
+   WHERE name NOT LIKE '%mon';
 UPDATE animals SET owner_id = 1 WHERE name = 'Agumon';
 UPDATE animals SET owner_id = 2 WHERE name = 'Gabumon' OR name = 'Pikachu';
 UPDATE animals SET owner_id = 3 WHERE name = 'Devimon' OR name = 'Plantmon';
