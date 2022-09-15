@@ -36,7 +36,7 @@ CREATE TABLE vets (
 
 CREATE TABLE specializations (
     species_id INT, 
-    vet_id INT,
+    vet_id INT
 );
 ALTER TABLE specializations ADD PRIMARY KEY (species_id, vet_id);
 ALTER TABLE specializations ADD CONSTRAINT species_fk FOREIGN KEY (species_id) REFERENCES species (id);
