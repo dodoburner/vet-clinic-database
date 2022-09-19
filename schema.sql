@@ -56,3 +56,9 @@ ALTER TABLE owners ADD COLUMN email VARCHAR(120);
 
 -- Change visits date data type to timestamp for the exercise
 ALTER TABLE visits ALTER COLUMN date_of_visit TYPE timestamp;
+
+--Drop the primary key of the visits so I can insert the data for the performance exercise
+ALTER TABLE visits DROP CONSTRAINT visits_pkey;
+
+CREATE INDEX emails_asc ON owners (email ASC);
+CREATE INDEX animal_ids_asc ON visits(animal_id ASC);

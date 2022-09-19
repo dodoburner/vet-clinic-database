@@ -166,4 +166,3 @@ INSERT INTO visits VALUES (
   (SELECT id FROM vets WHERE name = 'William Tatcher'),
   '11-Jan-2021'
 );
-
