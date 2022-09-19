@@ -50,3 +50,9 @@ CREATE TABLE visits (
 ALTER TABLE visits ADD PRIMARY KEY (animal_id, vet_id, date_of_visit);
 ALTER TABLE visits ADD CONSTRAINT animals_fk FOREIGN KEY (animal_id) REFERENCES animals (id);
 ALTER TABLE visits ADD CONSTRAINT vets_k FOREIGN KEY (vet_id) REFERENCES vets (id);
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
+
+-- Change visits date data type to timestamp for the exercise
+ALTER TABLE visits ALTER COLUMN date_of_visit TYPE timestamp;
