@@ -62,3 +62,4 @@ ALTER TABLE visits DROP CONSTRAINT visits_pkey;
 
 CREATE INDEX emails_asc ON owners (email ASC);
 CREATE INDEX animal_ids_asc ON visits(animal_id ASC);
+CREATE INDEX vet_ids_asc ON visits(animal_id ASC);
