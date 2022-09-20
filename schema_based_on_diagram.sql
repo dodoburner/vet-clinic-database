@@ -18,3 +18,16 @@ ADD CONSTRAINT patients_fk
 FOREIGN KEY (patient_id) 
 REFERENCES patients (id);
 
+CREATE TABLE invoices(
+  id INT,
+  total_amount DECIMAL,
+  generated_at TIMESTAMP,
+  payed_at TIMESTAMP;
+  medical_history_id INT,
+  PRIMARY KEY(id)
+)
+
+ALTER TABLE medical_histories
+ADD CONSTRAINT medical_histories_fk 
+FOREIGN KEY (medical_history_id) 
+REFERENCES medical_histories (id);
