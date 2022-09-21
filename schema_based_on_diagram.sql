@@ -38,3 +38,8 @@ CREATE TABLE treatments(
   type VARCHAR(50),
   name VARCHAR(100)
 );
+
+CREATE TABLE treatment_histories(
+  treatment_id INT REFERENCES treatments(id),
+  medical_history_id INT REFERENCES medical_histories(id)
+);
