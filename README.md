@@ -9,13 +9,21 @@ This repository includes files with plain SQL that can be used to recreate a dat
 To see the schema diagram of the database click on [this](https://lucid.app/documents/view/aa0aa717-1e2e-452e-98fd-e8b17e884b0d) link.
 
 
-## Author
+## Authors
 
 👤 **Dorian Urem**
 
 - GitHub: [@dodoburner](https://github.com/dodoburner)
 - Twitter: [@DorianUrem](https://twitter.com/DorianUrem)
 - LinkedIn: [Dorian Urem](https://www.linkedin.com/in/dorian-urem-252baa237/)
+
+
+👤 **Brian Nyachae**
+
+- GitHub: [@Bria222](https://github.com/Bria222)
+- Twitter: [@briannyachae9](https://twitter.com/briannyachae9)
+- LinkedIn: [brian-nyachae](https://www.linkedin.com/in/brian-nyachae/)
+
 
 ## 🤝 Contributing
 
