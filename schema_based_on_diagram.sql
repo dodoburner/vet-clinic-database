@@ -27,7 +27,7 @@ CREATE TABLE invoices(
   PRIMARY KEY(id)
 )
 
-ALTER TABLE medical_histories
+ALTER TABLE invoices
 ADD CONSTRAINT medical_histories_fk 
 FOREIGN KEY (medical_history_id) 
 REFERENCES medical_histories (id);
