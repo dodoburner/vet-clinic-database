@@ -31,3 +31,11 @@ ALTER TABLE medical_histories
 ADD CONSTRAINT medical_histories_fk 
 FOREIGN KEY (medical_history_id) 
 REFERENCES medical_histories (id);
+
+CREATE TABLE invoices(
+  id SERIAL PRIMARY KEY,
+  total_amount DECIMAL(3, 2),
+  generated_at TIMESTAMP,
+  paid_at TIMESTAMP,
+  medical_history_id INT REFERENCES medical_histories(id)
+);
